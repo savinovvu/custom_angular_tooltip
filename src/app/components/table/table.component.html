@@ -1,6 +1,6 @@
 <h2>SSL pricelist</h2>
 <div class="table-container">
-  <table *ngIf="pricelist" class="my-table">
+  <table *ngIf="pricelist">
     <tbody>
     <tr *ngFor="let item of pricelist; let i=index"
         [class.last]="i==pricelist.length-1">

@@ -1,5 +1,6 @@
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 tr {
@@ -13,10 +14,6 @@ td {
 
 .table-container {
   display: flex;
-}
-
-.my-table {
-  width: 100%;
 }
 
 tr.last {

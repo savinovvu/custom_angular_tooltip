@@ -1,4 +1,4 @@
-<div (mouseenter)="showDescription()" (mouseleave)="hideDescription()" class="upper">
+<div (mouseenter)="showDescription()" (mouseleave)="hideDescription()" class="сell-container">
   <div class="floating-window">
 
     <div *ngIf="visibleDescription" [drawWindow]="mouseY">
@@ -11,7 +11,7 @@
 
   </div>
 
-  <span class="td-text">
+  <span class="content-text">
   <ng-content></ng-content>
   </span>
 
