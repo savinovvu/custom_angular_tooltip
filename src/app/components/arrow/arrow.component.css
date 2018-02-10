@@ -1,0 +1,32 @@
+.arrow-container {
+  position: relative;
+  width: 10px;
+  height: auto;
+}
+
+.arrow {
+  background-color: transparent;
+  left: 10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: relative;
+}
+
+.line-right {
+  position: absolute;
+  left: -2px;
+  top: 4px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  transform: rotate(45deg);
+  width: 15px;
+}
+
+.line-left {
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  transform: rotate(-45deg);
+  width: 15px;
+}

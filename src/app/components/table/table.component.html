@@ -1,0 +1,16 @@
+<h2>SSL pricelist</h2>
+<div class="table-container">
+  <table *ngIf="pricelist" class="my-table">
+    <tbody>
+    <tr *ngFor="let item of pricelist; let i=index"
+        [class.last]="i==pricelist.length-1">
+      <td>
+        <app-description-cell [description]="item.description_ru">
+          {{ item.name }}
+        </app-description-cell>
+      </td>
+      <td> от {{ item.price.period[0].cost }} {{ item.price.currency }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

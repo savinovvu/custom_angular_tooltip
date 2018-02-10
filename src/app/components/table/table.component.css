@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  height: auto;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+td {
+  height: 53px;
+}
+
+.table-container {
+  display: flex;
+}
+
+.my-table {
+  width: 100%;
+}
+
+tr.last {
+  border-bottom: none;
+}
+
+

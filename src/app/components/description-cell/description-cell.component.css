@@ -1,0 +1,30 @@
+.td-text {
+  color: #2e77a8;
+}
+
+.upper {
+  position: relative;
+  height: 100%;
+}
+
+.arrow-up {
+  background-color: transparent;
+  position: absolute;
+  top: -10px;
+  left: 1px;
+}
+
+.arrow-down {
+  background-color: transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+
+}
+
+
+
+
+
+

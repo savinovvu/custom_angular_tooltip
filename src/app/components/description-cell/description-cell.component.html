@@ -1,0 +1,18 @@
+<div (mouseenter)="showDescription()" (mouseleave)="hideDescription()" class="upper">
+  <div class="floating-window">
+
+    <div *ngIf="visibleDescription" [drawWindow]="mouseY">
+      <app-arrow class="arrow-up" *ngIf="!isRenderDownArrow()"></app-arrow>
+      <span class="row-fixed-menu-text"
+           *ngIf="visibleDescription"
+           [innerHtml]="description |regexpClean:'__localname__'|safeHtml"></span>
+      <app-arrow class="arrow-down" *ngIf="isRenderDownArrow()"></app-arrow>
+    </div>
+
+  </div>
+
+  <span class="td-text">
+  <ng-content></ng-content>
+  </span>
+
+</div>
