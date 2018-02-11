@@ -1,7 +1,7 @@
 <div (mouseenter)="showDescription()" (mouseleave)="hideDescription()" class="сell-container">
   <div class="floating-window">
 
-    <div *ngIf="visibleDescription" [drawWindow]="mouseY">
+    <div *ngIf="visibleDescription" [drawWindow]="mouseY" @fadeInOut>
       <app-arrow class="arrow-up" *ngIf="!isRenderDownArrow()"></app-arrow>
       <span class="row-fixed-menu-text"
            *ngIf="visibleDescription"

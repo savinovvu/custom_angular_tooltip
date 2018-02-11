@@ -9,10 +9,11 @@ import {SafeHtmlPipe} from './pipes/safe-html.pipe';
 import {DrawWindowDirective} from './directives/get-size.directive';
 import {RegexpCleanerPipe} from './pipes/regexp.pipe';
 import {ArrowComponent} from './components/arrow/arrow.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  imports: [BrowserModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, BrowserAnimationsModule],
   declarations: [AppComponent, TableComponent,
     DescriptionCellComponent, SafeHtmlPipe, DrawWindowDirective, RegexpCleanerPipe, ArrowComponent],
   providers: [RestDataSourceService,

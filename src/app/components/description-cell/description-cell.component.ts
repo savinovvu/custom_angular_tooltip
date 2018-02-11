@@ -1,9 +1,11 @@
 import {Component, HostListener, Inject, Input, OnInit} from '@angular/core';
+import {FadeInOutTrigger} from '../../animations/fadeInOut-animation';
 
 @Component({
   selector: 'app-description-cell',
   templateUrl: './description-cell.component.html',
-  styleUrls: ['./description-cell.component.css']
+  styleUrls: ['./description-cell.component.css'],
+  animations: [FadeInOutTrigger]
 })
 export class DescriptionCellComponent implements OnInit {
   visibleDescription = false;
